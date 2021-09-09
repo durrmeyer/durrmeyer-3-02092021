@@ -29,18 +29,18 @@ aside {
         font-size: 18px;
     }
     button {
-        border: none;
-        height: 54px;
-        width: 210px;
-        border-radius: 45px;
-        font-size: 15px;
-        background: radial-gradient(circle at top, #ff79da, #9356dc);
+        border: $btn_bord;
+        height: $btn_height;
+        width: $btn_width;
+        border-radius: $btn_radius;
+        font-size: $btn_size;
+        background:$btn_background_color ;
         color: $color;
     }
 }
 
 h2 {
-    font-size: 23px;
+    font-size: 34px;
     margin-left: 10px;
     margin-top: 35px;
 }

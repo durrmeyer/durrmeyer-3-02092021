@@ -1,4 +1,60 @@
-img{
+img {
     height: $timg;
     width: $width;
+}
+h2 {
+    font-family: $text;
+    margin-left: 19px;
+    .heart {
+        font-size: 43px;
+        float: right;
+        margin-right: 62px;
+    }
+}
+.card-menu {
+    background-color: $color-card;
+    padding-bottom: 50px;
+    h3 {
+        margin-top: 40px;
+        margin-left: 15px;
+        font-weight: initial;
+        color: hsla(0, 0%, 0%, 0.6);
+        border-bottom: 3px solid $color-tertiaire;
+        width: 49px;
+        height: 32px;
+    }
+}
+.card {
+    background: $color;
+    border-radius: 14px;
+    margin: $margin;
+    line-height: 10px;
+    h4 {
+        margin: 0;
+        padding-top: 16px;
+        margin-left: 12px;
+        font-weight: $gras;
+        font-size: 20px;
+    }
+    .text {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        color: #000000b3;
+    }
+    .prix {
+        font-weight: bold;
+        color: $color-footer;
+        margin-right: 15px;
+    }    
+}
+button {
+    border: $btn_bord;
+    height: $btn_height;
+    width: $btn_width;
+    border-radius: $btn_radius;
+    font-size: $btn_size;
+    background:$btn_background_color ;
+    color: $color;
+   
 }
