@@ -11,6 +11,10 @@
         font-family: $text2;
         font-size: 25px;
         padding-top: 20px;
-        margin-left: 21px;
         font-weight: 800;
+        margin-left: 9;
+}
+@mixin img-restaurant {
+    height: 240px;
+    object-position: bottom;
 }
