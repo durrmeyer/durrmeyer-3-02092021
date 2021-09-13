@@ -8,136 +8,144 @@
 
 body {
   margin: 0;
-  font-family: roboto;
+  width: 100%;
 }
 
-.container {
+img {
+  height: 256px;
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+section .container {
   text-align: center;
   margin-top: 8px;
-  background-color: #ccc9c9;
   border-top: gray 2px solid;
 }
-
-.map-info {
+section .map-info {
+  background-color: #d6d4d4;
   display: flex;
-  align-items: baseline;
-  background: #c0bdbd;
+  align-items: center;
+  width: 100%;
 }
-.map-info p {
-  margin-left: 11px;
+section i {
+  padding-bottom: 5px;
   font-size: 21px;
+  margin-left: 66px;
+}
+section p {
+  margin-left: 20px;
+  font-weight: bolder;
 }
 
 aside {
-  padding-bottom: 53px;
+  background-color: #f2f2f2e7;
 }
 aside h1 {
-  font-size: 30px;
-  line-height: 24px;
-  margin-top: 40px;
+  font-size: 32px;
+  margin-top: 0px;
+  padding-top: 30px;
 }
 aside p {
-  font-size: 18px;
-}
-aside button {
-  border: none;
-  height: 54px;
-  width: 210px;
-  border-radius: 45px;
-  font-size: 15px;
-  background: radial-gradient(circle at top, #ff79da, #9356dc);
-  color: white;
+  font-size: 20px;
+  font-weight: lighter;
 }
 
-h2 {
-  font-size: 34px;
-  margin-left: 10px;
-  margin-top: 35px;
+article {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
-
-ul {
-  padding: 0 20px 0 20px;
+article h2 {
+  font-family: roboto;
+  font-size: 25px;
+  padding-top: 20px;
+  margin-left: 21px;
+  font-weight: 800;
 }
-
-.list-group-item {
+article li {
   display: flex;
   align-items: baseline;
+  background: #F2F2F2;
   border-radius: 20px;
-  background: #f2f2f2;
-  height: 3.5rem;
-  margin-top: 18px;
+  margin-bottom: 15px;
+  height: 65px;
+  width: 100%;
 }
-
-i {
-  margin-left: 39px;
+article ul {
+  padding-left: 15px;
+  width: 100%;
+}
+article ul .circle {
+  color: white;
+  height: 18px;
+  width: 18px;
+  border-radius: 100%;
+  background: #9356DC;
+  margin-right: 15px;
+}
+article ul i {
   font-size: 18px;
+  color: #80808094;
+}
+article ul p {
+  margin: 20px 0 20px 20px;
 }
 
-p {
-  margin-left: 15px;
-}
-
-.store {
-  color: #9356DC;
-}
-
-.album {
-  background: #f2f2f2;
-}
-.album .figure_restaurant {
-  position: relative;
-  width: 100%;
-}
-.album .alerte {
-  position: absolute;
-  color: blue;
-  display: flex;
-  justify-content: center;
-}
-.album p {
-  margin-left: 214px;
-  margin-top: 13px;
-  margin-right: 12px;
-  background: #99F2D0;
-  height: 25px;
-  width: 72px;
-}
-
-figure {
-  margin-left: 12px;
-}
-
-.card-img-top {
-  width: 100%;
-  margin-left: 0;
-  border-radius: 20px;
-  object-fit: cover;
-  object-position: bottom;
-  height: 168px;
+.album h2 {
+  font-family: roboto;
+  font-size: 25px;
+  padding-top: 20px;
+  margin-left: 21px;
+  font-weight: 800;
 }
 
 footer {
   color: white;
   background: black;
+  position: absolute;
+  width: 100%;
+}
+footer p {
+  font-family: shrikhand;
+}
+footer li {
+  display: flex;
+  align-items: baseline;
 }
 
 img {
-  height: 436px;
+  height: 256px;
   width: 100%;
+  object-fit: cover;
 }
 
 h2 {
   font-family: shrikhand;
+  font-size: 30px;
   margin-left: 19px;
+  padding-top: 50px;
+  font-weight: inherit;
 }
 h2 .heart {
-  font-size: 43px;
+  font-size: 30px;
   float: right;
   margin-right: 62px;
 }
 
-.card-menu {
+main {
+  position: relative;
   background-color: #F2F2F2;
+  background-position: bottom;
+  border-radius: 47px 47px 0 0;
+  position: 193px;
+}
+
+.card-menu {
   padding-bottom: 50px;
 }
 .card-menu h3 {
@@ -148,6 +156,9 @@ h2 .heart {
   border-bottom: 3px solid #99F2D0;
   width: 49px;
   height: 32px;
+}
+.card-menu h3 .heart {
+  margin: 7px 37px 0 0;
 }
 
 .card {
@@ -175,7 +186,14 @@ h2 .heart {
   margin-right: 15px;
 }
 
+.btn {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
 button {
+  cursor: pointer;
   border: none;
   height: 54px;
   width: 210px;
@@ -183,6 +201,7 @@ button {
   font-size: 15px;
   background: radial-gradient(circle at top, #ff79da, #9356dc);
   color: white;
+  margin-bottom: 33px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,16 @@
 footer{
     color:$color;
     background: $color-footer;
+    position: absolute;
+    width: 100%;
+   
+    p{
+        font-family: $text;
+    }
+    li{
+        
+        display: flex;
+        align-items: baseline;
+
+    }
 }

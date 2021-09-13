@@ -1,5 +1,16 @@
-//medias queries//
-
-$sm:600px;
-$sd:800px;
-$lg:1200px;
+@mixin article{
+    background: $color-card;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    height: 65px;
+    width: 100%;
+  
+    
+}
+@mixin font {
+        font-family: $text2;
+        font-size: 25px;
+        padding-top: 20px;
+        margin-left: 21px;
+        font-weight: 800;
+}

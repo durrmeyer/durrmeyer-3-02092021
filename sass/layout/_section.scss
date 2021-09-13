@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  width: 100%;
+}
+img {
+  height: $timg;
+  width: 100%;
+}
+li {
+  list-style-type: none;
+}
+section {
+  .container {
+    text-align: center;
+    margin-top: 8px;
+    border-top: gray 2px solid;
+  }
+  .map-info {
+    background-color: #d6d4d4;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  i {
+    padding-bottom: 5px;
+    font-size: 21px;
+    margin-left: 66px;
+  }
+  p {
+    margin-left: 20px;
+    font-weight: bolder;
+  }
+}
+aside {
+  background-color: #f2f2f2e7;
+  h1 {
+    font-size: 32px;
+    margin-top: 0px;
+    padding-top: 30px;
+  }
+  p {
+    font-size: 20px;
+    font-weight: lighter;
+  }
+}
+article {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  h2 {
+    @include font;
+  }
+  li {
+    display: flex;
+    align-items: baseline;
+    @include article;
+  }
+  ul {
+    padding-left: 15px;
+    width: 100%;
+    .circle{
+        color: $color;
+        height: 18px;
+        width: 18px;
+        border-radius: 100%;
+        background: $color-primaire;
+        margin-right: 15px;
+      }
+    i {
+     
+      font-size: 18px;
+      color: #80808094;
+    }
+    p {
+      margin: 20px 0 20px 20px;
+    }
+  }
+}
+.album{
+  h2{
+    @include font;
+  }
+  
+}
+
+
