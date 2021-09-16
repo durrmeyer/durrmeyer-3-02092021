@@ -1,20 +1,13 @@
-@mixin article{
-    background: $color-card;
-    border-radius: 20px;
-    margin-bottom: 15px;
-    height: 65px;
-    width: 100%;
-  
-    
-}
-@mixin font {
-        font-family: $text2;
-        font-size: 25px;
-        padding-top: 20px;
-        font-weight: 800;
-        margin-left: 9;
-}
-@mixin img-restaurant {
-    height: 240px;
-    object-position: bottom;
-}
+@mixin responsive ($breakpoint) {
+    @if $breakpoint == phone{
+        @media only screen and (max-width: 600px) {@content}
+        }
+    }
+    @mixin flexbox {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+    }
+    @mixin line {
+        text-decoration: none;
+    }

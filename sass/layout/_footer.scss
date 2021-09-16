@@ -3,14 +3,17 @@ footer{
     background: $color-footer;
     position: absolute;
     width: 100%;
-   
-    p{
-        font-family: $text;
-    }
-    li{
-        
+    padding-left: 15px;
+    padding-top: 45px;
+    line-height: 1%;
+    .list-footer-item{
         display: flex;
         align-items: baseline;
-
+    }
+    p{
+        font-family: $text2;
+    }
+    .item-icone{
+    color: $color;
     }
 }
