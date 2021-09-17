@@ -1,5 +1,4 @@
 html {
-  box-sizing: border-box;
   @include responsive(phone) {
     font-size: 100%;
   }
@@ -9,7 +8,6 @@ body {
   margin: 0;
   font-family: $text2;
 }
-
 .map {
   background-color: #e5e5e5;
   width: 100%;
@@ -19,7 +17,7 @@ body {
     padding-right: 17px;
     font-size: 27px;
   }
-  p{
+  p {
     font-size: 20px;
   }
 }
@@ -49,19 +47,14 @@ body {
     border-radius: $btn_radius;
   }
 }
-.block{
+.block {
   margin-left: 10px;
- .article-block{
-  display: flex;
-  align-items: baseline;
-  background: $color-card;
-  border-radius: $btn_radius;
-  margin-bottom: 10px;
-  &__number{
-    p{
+  &__number {
+    position: absolute;
+    p {
       background: $color-primaire;
-      height: 30px;
-      width:30px;
+      height: 24px;
+      width: 24px;
       border-radius: 100%;
       display: flex;
       align-items: center;
@@ -69,11 +62,62 @@ body {
       color: $color;
     }
   }
-  &__icone{
-    margin: 0 12px 0 12px;
-     }
- }
+  .article-block {
+    display: flex;
+    align-items: baseline;
+    background: $color-card;
+    border-radius: 15px;
+    margin: 0 0 20px 11px;
+    padding-left: 35px;
+    width: 266px;
+    box-shadow: 0px 0px 14px 0px rgb(0 0 0 / 50%);
+    &__icone {
+      margin-right: 22px;
+    }
+  }
 }
-  
 
+aside {
+  background-color: $color-card;
+  width: 100%;
+  padding-bottom: 20px;
+  .title {
+    padding-top: 40px;
+    padding-left: 10px;
+  }
+}
+.card-restaurant {
+  background: $color;
+  border-radius: 20px;
+  margin: 0 20px 20px 20px;
 
+  &__nouveau {
+    position: absolute;
+    color: green;
+    background: $color-tertiaire;
+    margin-left: 45px;
+  }
+  img {
+    object-fit: cover;
+    object-position: bottom;
+    width: 100%;
+    height: 170px;
+    border-radius: 20px 20px 0 0;
+  }
+}
+
+.card-body {
+  display: flex;
+  width: 100%;
+  &__text {
+    width: 50%;
+    padding-left: 10px;
+    line-height: 3px;
+  }
+  &__icone {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
