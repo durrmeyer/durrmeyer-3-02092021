@@ -19,20 +19,25 @@ body {
     padding-right: 17px;
     font-size: 27px;
   }
-  h2{
+  p{
     font-size: 20px;
   }
 }
-.section-info {
+.container-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: $color-card;
   width: 100%;
   text-align: center;
   padding-top: 12px;
+  padding-bottom: 20px;
   &__title {
-    font-size: 20px;
+    font-size: 15px;
   }
   &__text {
     font-size: 18px;
+    padding-bottom: 10px;
   }
   &__btn {
     color: $color;
@@ -44,3 +49,31 @@ body {
     border-radius: $btn_radius;
   }
 }
+.block{
+  margin-left: 10px;
+ .article-block{
+  display: flex;
+  align-items: baseline;
+  background: $color-card;
+  border-radius: $btn_radius;
+  margin-bottom: 10px;
+  &__number{
+    p{
+      background: $color-primaire;
+      height: 30px;
+      width:30px;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $color;
+    }
+  }
+  &__icone{
+    margin: 0 12px 0 12px;
+     }
+ }
+}
+  
+
+
