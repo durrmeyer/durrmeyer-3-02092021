@@ -3,18 +3,21 @@ footer{
     background: $color-footer;
     position: absolute;
     width: 100%;
-    padding-left: 15px;
+    padding-left: 22px;
     padding-top: 30px;
     line-height: 1%;
-    .logo-footer
-    .list-footer-item{
+    .list-footer{
         display: flex;
-        align-items: baseline;
+        flex-direction: column;
+        padding: 0;
+        &__item{
+            display: flex;
+            align-items: center;
+             .item__helping{
+                padding-right: 10px;
+                font-size: 10px;
+                }
+        }
+        
+        }
     }
-    p{
-        font-family: $text2;
-    }
-    .item-icone{
-    color: $color;
-    }
-}
