@@ -4,20 +4,28 @@ footer{
     position: absolute;
     width: 100%;
     padding-left: 22px;
-    padding-top: 30px;
     line-height: 1%;
-    .list-footer{
-        display: flex;
-        flex-direction: column;
+    h3{
+        font-family: $text, cursive;
+        font-weight: inherit;
+        font-size: 13px;
+    }
+    ul{
         padding: 0;
-        &__item{
-            display: flex;
-            align-items: center;
-             .item__helping{
-                padding-right: 10px;
-                font-size: 10px;
-                }
-        }
-        
+        a{
+            color: $color;
+            line-height: 19px;
+            text-decoration: none;
+            font-size: 11px;
+            font-family: $text2;
+            i{
+                padding-right: 5px; 
+            }
+            .icon{
+                font-size: 9px;
+            }
         }
     }
+    }
+    
+    
