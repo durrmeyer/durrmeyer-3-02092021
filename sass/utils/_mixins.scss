@@ -1,9 +1,32 @@
+@mixin responsive($breakpoint) {
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 1800px) {
+            @content;
+        }
+    }
+    @if $breakpoint == desktop {
+        @media only screen and (max-width: 1500px) {
+            @content;
+        }
+    }
+    @if $breakpoint == tablette {
+        @media only screen and (max-width: 700px) {
+            @content;
+        }
+    }
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 400px) {
+            @content;
+        }
+    }
+}
 
-    @mixin flexbox {
-        display: flex;
-        align-items: baseline;
-        justify-content: center;
-    }
-    @mixin line {
-        text-decoration: none;
-    }
+@mixin flexbox {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+@mixin line {
+    text-decoration: none;
+}

@@ -1,31 +1,29 @@
-footer{
-    color:$color;
+footer {
+    color: $color;
     background: $color-footer;
     position: absolute;
     width: 100%;
     padding-left: 22px;
     line-height: 1%;
-    h3{
+    h3 {
         font-family: $text, cursive;
         font-weight: inherit;
         font-size: 13px;
     }
-    ul{
+    ul {
         padding: 0;
-        a{
+        a {
             color: $color;
             line-height: 19px;
             text-decoration: none;
             font-size: 11px;
             font-family: $text2;
-            i{
-                padding-right: 5px; 
+            i {
+                padding-right: 5px;
             }
-            .icon{
+            .icon {
                 font-size: 9px;
             }
         }
     }
-    }
-    
-    
+}
