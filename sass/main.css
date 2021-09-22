@@ -21,11 +21,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
   background: bisque;
 }
 
@@ -57,7 +57,7 @@ aside .explorer {
   height: 45px;
   border-radius: 45px;
   width: 186px;
-  background: linear-gradient #9356DC;
+  background: linear-gradient(#9356dc);
 }
 
 main {

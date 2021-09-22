@@ -1,29 +1,32 @@
 footer {
-    color: $color;
-    background: $color-footer;
-    position: absolute;
-    width: 100%;
-    padding-left: 22px;
-    line-height: 1%;
-    h3 {
-        font-family: $text, cursive;
-        font-weight: inherit;
-        font-size: 13px;
+  color: $color;
+  background: $color-footer;
+  padding-left: 22px;
+  margin-top: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  h3 {
+    font-family: $text, cursive;
+    font-weight: inherit;
+    font-size: 13px;
+  }
+  ul {
+    font-weight: 400;
+    padding-bottom: 15px;
+    a {
+      color: $color;
+      line-height: 19px;
+      text-decoration: none;
+      font-size: 11px;
+
+      font-family: $text2;
+      i {
+        padding-right: 5px;
+      }
+      .icon {
+        font-size: 9px;
+      }
     }
-    ul {
-        padding: 0;
-        a {
-            color: $color;
-            line-height: 19px;
-             @include line;
-            font-size: 11px;
-            font-family: $text2;
-            i {
-                padding-right: 5px;
-            }
-            .icon {
-                font-size: 9px;
-            }
-        }
-    }
+  }
 }

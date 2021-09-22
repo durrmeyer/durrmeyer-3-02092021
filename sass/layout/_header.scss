@@ -1,19 +1,11 @@
-
-.headerlogo{
+.headerlogo {
   @include flexbox;
   height: 80px;
   margin: 0;
   margin-bottom: 6px;
-  &__img{
-    height: 40px;
+  &__img {
+    height: 35px;
     width: 189px;
     margin-top: 29px;
-   
   }
 }
-
-    
-   
- 
-
-
