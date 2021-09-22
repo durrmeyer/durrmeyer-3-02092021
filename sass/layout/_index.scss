@@ -14,9 +14,8 @@
 }
 .info {
   background: $color-card;
-  display: flex;
-  flex-direction: column;
   text-align: center;
+  margin-top: -25px;
   &__title {
     font-size: 25px;
   }
@@ -25,15 +24,12 @@
   }
   &__btn {
     margin-bottom: 25px;
-    margin-left: 75px;
-    margin-right: 75px;
     background-image: linear-gradient(to top, $color-primaire, #b35cdc, $color-secondaire);
     border-radius: 20px;
     border: none;
-    padding: 6px 14px 6px 14px;
+    padding: 6px 25px 6px 25px;
     color: #fff;
     font-weight: bold;
-    cursor: pointer;
   }
 }
 
@@ -43,12 +39,7 @@ section {
 .etape__item {
   margin-left: 0;
   padding-left: 12px;
-  @include responsive(desktop){
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-  }
+ 
   li {
     display: flex;
     align-items: baseline;
@@ -91,10 +82,7 @@ article {
     padding-left: 15px;
     padding-right: 15px;
     @include responsive(desktop){
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: center;
+      @include medias;
     }
     }
   .card {

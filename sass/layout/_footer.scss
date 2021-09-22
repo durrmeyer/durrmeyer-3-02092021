@@ -15,7 +15,7 @@ footer {
         a {
             color: $color;
             line-height: 19px;
-            text-decoration: none;
+             @include line;
             font-size: 11px;
             font-family: $text2;
             i {
