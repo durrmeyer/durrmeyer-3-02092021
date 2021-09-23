@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ohmyfood</title>
+    <title>Ohmyfood, le délice des sens</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -16,94 +16,108 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700;900&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href=" ./public/css/style.css" />
+    <link rel="stylesheet" href="/public/css/style.css" />
   </head>
   <body>
-    <header>
+    <header class="headerlogo">
       <img
         class="headerlogo__img"
-        src="public/images/ohmyfood.png"
+        src="/public/images/logo/ohmyfood.png"
         alt="logo-ohmyfood"
       />
     </header>
-    <div class="img-header">
+    <div class="background">
       <img
-        src="/public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-        alt="img-header"
+        src="/public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+        alt="menu a la française"
       />
     </div>
     <main>
-      <div class="card-menu">
-        <h1>A la française <i class="far fa-heart heart"></i></h1>
-        <h2>ENTREES</h2>
-        <div class="card">
-          <h3>Tartare de poulpe acidulé</h3>
-          <div class="text">
-            <p>Aux zests d'orange</p>
-            <div class="prix">25€</div>
+      <div class="container">
+        <div class="restaurant">
+          <div class="restaurant__title">
+            <h1>Le délice des sens</h1>
+          </div>
+          <div class="restaurant__icone">
+            <i class="far fa-heart heart"></i>
           </div>
         </div>
-        <div class="card">
-          <h3>Velouté de légumes d'antan</h3>
-          <div class="text">
-            <p>Carotte, panais, topinambour</p>
-            <div class="prix">35€</div>
+        <section>
+          <h2 class="title-menu">ENTRÉES</h2>
+          <div class="menu">
+            <h3>Tartare de thon</h3>
+            <div class="menu__text">
+              <p>Assaisonné au yuzu</p>
+              <div class="menu__prix">25€</div>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <h3>Soupe à l'oignon</h3>
-          <div class="text">
-            <p>Revisitée</p>
-            <div class="prix">20€</div>
+          <div class="menu">
+            <h3>Bouchée de homard croustillant</h3>
+            <div class="menu__text">
+              <p>Et sa farandole de petits légumes</p>
+              <div class="menu__prix">35€</div>
+            </div>
           </div>
-        </div>
-        <h3>PLATS</h3>
-        <div class="card">
-          <h3>Coquilles Saint-Jacques</h3>
-          <div class="text">
-            <p>Accompagnées d'une purée de panais</p>
-            <div class="prix">3 0€</div>
+          <div class="menu">
+            <h3>Velouté de cèpes</h3>
+            <div class="menu__text">
+              <p>Aux truffes</p>
+              <div class="menu__prix">20€</div>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <h3>Magret de canard</h3>
-          <div class="text">
-            <p>Et parmentier de pommes de terres</p>
-            <div class="prix">35€</div>
+        </section>
+        <section>
+          <h2 class="title-menu">PLATS</h2>
+          <div class="menu">
+            <h3>Poulet rôti aux herbes de Provence</h3>
+            <div class="menu__text">
+              <p>Et sa crème de truffe</p>
+              <div class="menu__prix">40€</div>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <h3>Pigeonneau d'Ille-et-Vilaine</h3>
-          <div class="text">
-            <p>Sur son lit de gnocchis aux légumes</p>
-            <div class="prix">3 3 €</div>
+          <div class="menu">
+            <h3>Langouste rôtie</h3>
+            <div class="menu__text">
+              <p>Et ses légumes de saison</p>
+              <div class="menu__prix">35€</div>
+            </div>
           </div>
-        </div>
-        <h3>DESSERTS</h3>
-        <div class="card">
-          <h3>Pétales de violettes glacés</h3>
-          <div class="text">
-            <p>Et purée de noisettes</p>
-            <div class="prix">18€</div>
+          <div class="menu">
+            <h3>Côte de boeuf Angus</h3>
+            <div class="menu__text">
+              <p>Et sa purée de panais</p>
+              <div class="menu__prix">44€</div>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <h3>Fondant au chocolat</h3>
-          <div class="text">
-            <p>Revisité</p>
-            <div class="prix">22€</div>
+        </section>
+
+        <section>
+          <h2 class="title-menu">DESSERTS</h2>
+          <div class="menu">
+            <h3>Farandole de desserts</h3>
+            <div class="menu__text">
+              <p>Du chef</p>
+              <div class="menu__prix">18€</div>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <h3>Millefeuille croustillant</h3>
-          <div class="text">
-            <p>Myrtilles et pâte d'amande</p>
-            <div class="prix">23€</div>
+          <div class="menu">
+            <h3>Crème brulée</h3>
+            <div class="menu__text">
+              <p>Revisitée</p>
+              <div class="menu__prix">22€</div>
+            </div>
           </div>
+          <div class="menu">
+            <h3>Tiramisu</h3>
+            <div class="menu__text">
+              <p>À la noisette</p>
+              <div class="menu__prix">23€</div>
+            </div>
+          </div>
+        </section>
+        <div class="button">
+          <button class="button__menu">Commander</button>
         </div>
-      </div>
-      <div class="btn">
-        <button>Commander</button>
       </div>
     </main>
     <footer>
@@ -114,11 +128,11 @@
         </li>
         <li>
           <a href="#"
-            ><i class="fas fa-hands-helping icon"></i> Devenir partenaire</a
-          >
+            ><i class="fas fa-hands-helping icon"></i> Devenir partenaire
+          </a>
         </li>
         <li><a href="#">Mentions légales</a></li>
-        <li><a href="#ohmyfood@gmail.com">Contact</a></li>
+        <li><a href="ohmyfood@gmail.com">Contact</a></li>
       </ul>
     </footer>
   </body>
