@@ -1,0 +1,81 @@
+.container {
+  background: $color-card;
+  border-radius: 55px 55px 0 0;
+  position: relative;
+  margin-top: -66px;
+  .button {
+    text-align: center;
+    margin-top: 45px;
+    padding-bottom: 45px;
+    &__menu {
+      background: linear-gradient(#ff79da, 25%, #9356dc);
+      border: $btn-border;
+      height: $btn_height;
+      width: $btn_width;
+      border-radius: $btn_radius;
+      font-size: $btn_size;
+      color: white;
+      font-weight: 600;
+    }
+  }
+}
+.background {
+  img {
+    height: 305px;
+  }
+}
+.restaurant {
+  display: flex;
+  align-items: baseline;
+  padding-top: 27px;
+  &__title {
+    width: 80%;
+    font-family: $text;
+    h1 {
+      font-size: 26px;
+      margin-left: 16px;
+    }
+  }
+  &__icone {
+    font-size: 30px;
+    padding-left: 1rem;
+  }
+}
+section {
+  margin-bottom: 12px;
+  margin-left: 10px;
+  padding-bottom: 12px;
+}
+.title-menu {
+  font-weight: lighter;
+  border-bottom: 3px solid $color-tertiaire;
+  width: 59px;
+  font-size: 15px;
+  padding-bottom: 2px;
+  margin-left: 5px;
+}
+.menu {
+  background: $white;
+  margin-right: 15px;
+  padding-right: 20px;
+  border-radius: 15px;
+  h3 {
+    font-size: 15px;
+    padding-left: 7px;
+    padding-top: 7px;
+  }
+  &__text {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: -22px;
+    p {
+      font-size: 12px;
+      padding-left: 8px;
+    }
+  }
+  &__prix {
+    font-size: 12px;
+    font-weight: 400;
+  }
+}

@@ -1,7 +1,7 @@
 footer {
-  color: $color;
+  color: $white;
   background: $color-footer;
-  padding-left: 22px;
+  padding-left: 20px;
   margin-top: 0;
   box-sizing: border-box;
   display: flex;
@@ -14,8 +14,9 @@ footer {
   ul {
     font-weight: 400;
     padding-bottom: 15px;
+    padding-left: 0;
     a {
-      color: $color;
+      color: $white;
       line-height: 19px;
       text-decoration: none;
       font-size: 11px;

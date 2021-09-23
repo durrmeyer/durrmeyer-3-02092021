@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ohmyfood</title>
+    <title>Ohmyfood, la palette du goût</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -19,96 +19,121 @@
     <link rel="stylesheet" href="/public/css/style.css" />
   </head>
   <body>
-    <header> 
-      <header class="headerlogo">
-        <img class="headerlogo__img" src="/public/images/ohmyfood.png" alt="logo-ohmyfood">
-      </header>
-      <div class="img-header">
-        <img src="/public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="img-header">
+    <header class="headerlogo">
+      <img
+        class="headerlogo__img"
+        src="/public/images/logo/ohmyfood.png"
+        alt="logo-ohmyfood"
+      />
+    </header>
+    <div class="background">
+      <img
+        src="/public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+        alt="menu a la française"
+      />
+    </div>
+    <main>
+      <div class="container">
+        <div class="restaurant">
+          <div class="restaurant__title">
+            <h1>La palette du goût</h1>
+          </div>
+          <div class="restaurant__icone">
+            <i class="far fa-heart heart"></i>
+          </div>
+        </div>
+        <section>
+          <h2 class="title-menu">ENTRÉES</h2>
+          <div class="menu">
+            <h3>Fricassée d'escargot</h3>
+            <div class="menu__text">
+              <p>Au piment d'Espelette</p>
+              <div class="menu__prix">25€</div>
+            </div>
+          </div>
+          <div class="menu">
+            <h3>Foie gras de canard mi-cuit</h3>
+            <div class="menu__text">
+              <p>Et ses copeaux de truffe noire</p>
+              <div class="menu__prix">35€</div>
+            </div>
+          </div>
+          <div class="menu">
+            <h3>Oeuf au plat</h3>
+            <div class="menu__text">
+              <p>Assaisonné à la truffe sur lit de caviar</p>
+              <div class="menu__prix">20€</div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2 class="title-menu">PLATS</h2>
+          <div class="menu">
+            <h3>Filet de boeuf aux herbes</h3>
+            <div class="menu__text">
+              <p>Accompagné de sa ribambelle de légumes</p>
+              <div class="menu__prix">40€</div>
+            </div>
+          </div>
+          <div class="menu">
+            <h3>Parmentier de queue de boeuf</h3>
+            <div class="menu__text">
+              <p>À la truffe noire sur sa purée de panais</p>
+              <div class="menu__prix">35€</div>
+            </div>
+          </div>
+          <div class="menu">
+            <h3>Filet de turbot</h3>
+            <div class="menu__text">
+              <p>Aux agrumes</p>
+              <div class="menu__prix">44€</div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="title-menu">DESSERTS</h2>
+          <div class="menu">
+            <h3>Paris-Brest</h3>
+            <div class="menu__text">
+              <p>Revisité</p>
+              <div class="menu__prix">18€</div>
+            </div>
+          </div>
+          <div class="menu">
+            <h3>Macaron au chocolat d'exception</h3>
+            <div class="menu__text">
+              <p>DeEt glace à la vanille de Madagascar</p>
+              <div class="menu__prix">22€</div>
+            </div>
+          </div>
+          <div class="menu">
+            <h3>Mousse au chocolat</h3>
+            <div class="menu__text">
+              <p>Au piment d'Espelette et à la truffe noire</p>
+              <div class="menu__prix">23€</div>
+            </div>
+          </div>
+        </section>
+        <div class="button">
+          <button class="button__menu">Commander</button>
+        </div>
       </div>
-      <main>
-        <div class="card-menu">
-        <h2>A la française <i class="far fa-heart heart"></i></h2>
-        <h3>ENTREES</h3>
-        <div class="card">
-          <h4>Tartare de poulpe acidulé</h4>
-          <div class="text">
-            <p>Aux zests d'orange</p>
-            <div class="prix">25€</div>
-          </div>
-        </div>
-        <div class="card">
-          <h4>Velouté de légumes d'antan</h4>
-          <div class="text">
-            <p>Carotte, panais, topinambour</p>
-            <div class="prix">35€</div>
-          </div>
-        </div>
-        <div class="card">
-          <h4>Soupe à l'oignon</h4>
-          <div class="text">
-            <p>Revisitée</p>
-            <div class="prix">20€</div>
-          </div>
-        </div>
-        <h3>PLATS</h3>
-        <div class="card">
-          <h4>Coquilles Saint-Jacques</h4>
-          <div class="text">
-            <p>Accompagnées d'une purée de panais</p>
-            <div class="prix">40€</div>
-          </div>
-        </div>
-        <div class="card">
-          <h4>Magret de canard</h4>
-          <div class="text">
-            <p>Et parmentier de pommes de terres</p>
-            <div class="prix">35€</div>
-          </div>
-        </div>
-        <div class="card">
-          <h4>Pigeonneau d'Ille-et-Vilaine</h4>
-          <div class="text">
-            <p>Sur son lit de gnocchis aux légumes</p>
-            <div class="prix">44€</div>
-          </div>
-        </div>
-        <h3>DESSERTS</h3>
-        <div class="card">
-          <h4>Pétales de violettes glacés</h4>
-          <div class="text">
-            <p>Et purée de noisettes</p>
-            <div class="prix">18€</div>
-          </div>
-        </div>
-        <div class="card">
-          <h4>Fondant au chocolat</h4>
-          <div class="text">
-            <p>Revisité</p>
-            <div class="prix">22€</div>
-          </div>
-        </div>
-        <div class="card">
-          <h4>Millefeuille croustillant</h4>
-          <div class="text">
-            <p>Myrtilles et pâte d'amande</p>
-            <div class="prix">23€</div>
-          </div>
-        </div>
-      </div>
-      <div class="btn">
-        <button>Commander</button>
-      </div>
-     
     </main>
     <footer>
       <h3>ohmyfood</h3>
       <ul>
-          <li><a href="#"><i class="fas fa-utensils "></i> Proposer un restaurant</a></li>
-          <li><a href="#"><i class="fas fa-hands-helping icon"></i> Devenir partenaire</a></li>
-          <li><a href="#">Mentions légales</a></li>
-          <li><a href="#ohmyfood@gmail.com">Contact</a></li>
+        <li>
+          <a href="#"><i class="fas fa-utensils"></i> Proposer un restaurant</a>
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fas fa-hands-helping icon"></i> Devenir partenaire
+          </a>
+        </li>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="ohmyfood@gmail.com">Contact</a></li>
       </ul>
-     </footer>
+    </footer>
   </body>
 </html>

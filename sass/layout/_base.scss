@@ -1,18 +1,14 @@
-
 body {
-
-    font-family: $text2;
-    font-weight: lighter;
-    }
-  h1 {
-    font-size: 32px;
-  }
-  li{
-    list-style: none;
-  }
-  img{
-    height: 250px;
-    width: 100%;
-  }
- 
-      
+  font-family: $text2;
+  font-weight: lighter;
+}
+h1 {
+  font-size: 32px;
+}
+li {
+  list-style: none;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+}
