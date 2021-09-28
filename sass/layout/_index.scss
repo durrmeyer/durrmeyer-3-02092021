@@ -103,14 +103,34 @@ article {
     padding-right: 15px;
     @include responsive(desktop) {
       @include flex-row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    @include responsive(tablette) {
+      @include flex-row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    @include responsive(phone) {
+      display: flex;
     }
   }
 
   .card {
     background-color: $white;
-    margin: 0 40px 27px 40px;
+    margin-bottom: 27px;
     padding-bottom: 10px;
     border-radius: 20px;
+    width: 100%;
+    @include responsive(desktop) {
+      width: 366px;
+      height: 186px;
+    }
+    @include responsive(tablette) {
+      width: 299px;
+      height: 186px;
+    }
+
     &__new {
       color: #008766;
       border-radius: 3px;
@@ -118,36 +138,24 @@ article {
       position: absolute;
       display: flex;
       justify-content: center;
+
       p {
         background: $color-tertiaire;
         border-radius: 3px;
         padding: 4px 11px 4px 11px;
-        margin-top: 18px;
+        margin-top: 28px;
         font-family: $text2;
         font-weight: 600;
         font-size: 12px;
       }
     }
-    .note__mg {
-      object-fit: cover;
-    }
+
     img {
       object-fit: cover;
       object-position: center;
       border-radius: 20px 20px 0 0;
-      height: 172px;
+      height: 131px;
       width: 100%;
-
-      @include responsive(desktop) {
-        width: 461px;
-        display: flex;
-        height: 202px;
-      }
-      @include responsive(tablette) {
-        display: flex;
-        height: 202px;
-        width: 100%;
-      }
     }
   }
   .card-body {

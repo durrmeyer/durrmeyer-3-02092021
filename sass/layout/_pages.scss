@@ -41,6 +41,7 @@
   &__icone {
     font-size: 30px;
     padding-left: 1rem;
+    position: relative;
     .heart {
       display: block;
     }
@@ -65,7 +66,9 @@ section {
   padding-left: 15px;
   padding-right: 15px;
   margin-right: 15px;
-
+  animation: myAnim 1s linear 0s normal both;
+  -webkit-animation: myAnim 1s linear 0s normal both;
+  position: relative;
   h3 {
     font-size: 15px;
     padding-left: 7px;
@@ -100,11 +103,14 @@ section {
     border-bottom-right-radius: 15px;
   }
 }
-@keyframes slideDown {
+@keyframes myAnim {
   0% {
     opacity: 0;
+    transform: translateY(50px);
   }
+
   100% {
     opacity: 1;
+    transform: translateY(0);
   }
 }
