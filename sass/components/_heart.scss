@@ -1,0 +1,22 @@
+.fa-heart {
+  display: flex;
+  right: 31px;
+  bottom: 29px;
+  border-radius: 50%;
+  padding: 0.2em;
+  color: rgb(3, 3, 3);
+  position: absolute;
+}
+.fa-heart::before {
+  content: "\f004";
+  transition: color 0.5s ease-out;
+  -webkit-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+  -ms-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+}
+.fa-heart:hover::before {
+  color: $color-primaire;
+  font-weight: bold;
+  cursor: pointer;
+}
