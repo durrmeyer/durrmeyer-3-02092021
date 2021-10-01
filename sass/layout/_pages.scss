@@ -62,15 +62,18 @@ section {
 .menu {
   background: $white;
   box-shadow: 0 4px 6px #d0ccd0;
+  border-radius: 0 15px 15px 0;
   border-radius: 15px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 4px 15px 4px;
-
+  /*deroulement du menu*/
   animation: myAnim 3s linear 0s normal both;
   -webkit-animation: myAnim 3s linear 0s normal both;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
+  text-overflow: ellipsis;
   &__animation {
     position: absolute;
     display: -webkit-box;
@@ -94,11 +97,6 @@ section {
     -ms-transform-origin: right;
     transform-origin: right;
     visibility: hidden;
-    &__cercle {
-      color: #fff;
-      font-size: 20px;
-      visibility: hidden;
-    }
   }
   h3 {
     font-size: 15px;
@@ -111,6 +109,8 @@ section {
     align-items: baseline;
     justify-content: space-between;
     margin-top: -22px;
+    /*test btn*/
+
     p {
       font-size: 12px;
       padding-left: 8px;
@@ -120,7 +120,48 @@ section {
     font-size: 12px;
     font-weight: 400;
   }
+  .check {
+    background-color: mediumvioletred;
+    height: 72px;
+    top: 0;
+    right: -208px;
+    width: 16%;
+    padding: 0 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    overflow: hidden;
+    transform-origin: right;
+
+    border-radius: 0 15px 15px 0;
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    &__icon {
+      background-color: white;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      opacity: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+    }
+    &:hover {
+      transform: translateX(-200px);
+      -webkit-transform: translateX(-200px);
+      -moz-transform: translateX(-200px);
+      -ms-transform: translateX(-200px);
+      -o-transform: translateX(-200px);
+    }
+  }
 }
+
 @keyframes myAnim {
   0% {
     opacity: 0;
