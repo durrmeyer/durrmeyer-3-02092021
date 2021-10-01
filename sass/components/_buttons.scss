@@ -4,3 +4,32 @@ $btn_width: 210px;
 $btn_radius: 45px;
 $btn_size: 15px;
 $btn_background_color: linear-gradient(#ff79da, 17%, #9356dc);
+
+/*test btn*/
+.check {
+  height: 72px;
+  top: 0;
+  right: -30px;
+  width: 10%;
+  padding: 0 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform-origin: right;
+  color: #fff;
+  border-radius: 0 15px 15px 0;
+  font-size: 18px;
+  cursor: pointer;
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+.check:hover {
+  background-color: rgb(95, 188, 211);
+  transform: translateX(-30px);
+  -webkit-transform: translateX(-30px);
+  -moz-transform: translateX(-30px);
+  -ms-transform: translateX(-30px);
+  -o-transform: translateX(-30px);
+}

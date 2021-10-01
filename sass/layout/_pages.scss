@@ -65,15 +65,46 @@ section {
   border-radius: 15px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-right: 4px;
-  margin-left: 4px;
-  /* animation: myAnim 3s linear 0s normal both;
+  margin: 0 4px 15px 4px;
+
+  animation: myAnim 3s linear 0s normal both;
   -webkit-animation: myAnim 3s linear 0s normal both;
-  position: relative;*/
+  position: relative;
+  overflow: hidden;
+  &__animation {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #3fc0a6;
+    top: 0;
+    left: 100%;
+    width: 20%;
+    height: 100%;
+    border-radius: 0 1.5rem 1.5rem 0;
+    color: #fff;
+    font-size: 20px;
+    -webkit-transform-origin: right;
+    -ms-transform-origin: right;
+    transform-origin: right;
+    visibility: hidden;
+    &__cercle {
+      color: #fff;
+      font-size: 20px;
+      visibility: hidden;
+    }
+  }
   h3 {
     font-size: 15px;
     padding-left: 7px;
     padding-top: 7px;
+    white-space: nowrap;
   }
   &__text {
     display: flex;
@@ -89,21 +120,8 @@ section {
     font-size: 12px;
     font-weight: 400;
   }
-  /*.validation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: aqua;
-    width: 0;
-    padding: 20px;
-    right: 14px;
-    position: absolute;
-    top: 150px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-  }*/
 }
-/*@keyframes myAnim {
+@keyframes myAnim {
   0% {
     opacity: 0;
     transform: translateY(50px);
@@ -113,4 +131,4 @@ section {
     opacity: 1;
     transform: translateY(0);
   }
-}*/
+}
