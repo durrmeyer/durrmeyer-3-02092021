@@ -277,12 +277,12 @@ article .card-body__text {
   border-radius: 50%;
   width: 200px;
   height: 200px;
-  animation: loader 5s linear 6 forwards;
+  animation: loader 5s linear 5 forwards;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  -webkit-animation: loader 2s linear 6 forwards;
+  -webkit-animation: loader 5s linear 5 forwards;
 }
 
 @keyframes loader {
@@ -306,6 +306,7 @@ article .card-body__text {
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
+    background-color: transparent;
     opacity: 0;
   }
 }
@@ -415,14 +416,13 @@ section {
   border-radius: 15px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 4px 15px 4px;
+  margin: 0 11px 15px 4px;
   /*deroulement du menu*/
   animation: myAnim 3s linear 0s normal both;
   -webkit-animation: myAnim 3s linear 0s normal both;
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  text-overflow: ellipsis;
 }
 .menu__animation {
   position: absolute;
@@ -468,38 +468,25 @@ section {
 .menu__prix {
   font-size: 12px;
   font-weight: 400;
+  text-overflow: ellipsis;
 }
 .menu .check {
-  background-color: mediumvioletred;
-  height: 72px;
-  top: 0;
-  right: -208px;
-  width: 16%;
-  padding: 0 2%;
+  position: absolute;
+  background: aqua;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  overflow: hidden;
-  transform-origin: right;
-  border-radius: 0 15px 15px 0;
+  height: 100%;
+  top: 0;
+  left: 100;
+  right: -201px;
+  width: 20%;
+  color: aqua;
+  font-size: 20px;
   transition-property: transform;
   transition-duration: 2s;
   transition-timing-function: ease;
-}
-.menu .check__icon {
-  background-color: white;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  opacity: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  overflow: hidden;
 }
 .menu .check:hover {
   transform: translateX(-200px);
@@ -507,6 +494,28 @@ section {
   -moz-transform: translateX(-200px);
   -ms-transform: translateX(-200px);
   -o-transform: translateX(-200px);
+}
+.menu .check__icon {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  padding-left: 8px;
+  padding-top: 8px;
+  display: flex;
+  justify-items: center;
+  transition: transform 0.5s ease-in-out;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-transition: transform 0.5s ease-in-out;
+  -moz-transition: transform 0.5s ease-in-out;
+  -ms-transition: transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+}
+.menu .check__icon:hover {
+  transform: rotate(360deg);
 }
 
 @keyframes myAnim {
