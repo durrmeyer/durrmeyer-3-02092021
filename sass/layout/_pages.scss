@@ -66,7 +66,7 @@ section {
   border-radius: 15px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 4px 15px 4px;
+  margin: 0 11px 15px 4px;
   /*deroulement du menu*/
   animation: myAnim 3s linear 0s normal both;
   -webkit-animation: myAnim 3s linear 0s normal both;
@@ -123,6 +123,7 @@ section {
   }
   .check {
     position: absolute;
+    background: aqua;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,20 +132,41 @@ section {
     left: 100;
     right: -201px;
     width: 20%;
-    color: white;
+    color: aqua;
     font-size: 20px;
     transition-property: transform;
     transition-duration: 2s;
     transition-timing-function: ease;
     overflow: hidden;
-  }
-  .check:hover {
-    transform: translateX(-200px);
-    background: aqua;
-    -webkit-transform: translateX(-200px);
-    -moz-transform: translateX(-200px);
-    -ms-transform: translateX(-200px);
-    -o-transform: translateX(-200px);
+    &:hover {
+      transform: translateX(-200px);
+      -webkit-transform: translateX(-200px);
+      -moz-transform: translateX(-200px);
+      -ms-transform: translateX(-200px);
+      -o-transform: translateX(-200px);
+    }
+    &__icon {
+      background-color: white;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+      padding-left: 8px;
+      padding-top: 8px;
+      display: flex;
+      justify-items: center;
+      transition: transform 0.5s ease-in-out;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      -webkit-transition: transform 0.5s ease-in-out;
+      -moz-transition: transform 0.5s ease-in-out;
+      -ms-transition: transform 0.5s ease-in-out;
+      -o-transition: transform 0.5s ease-in-out;
+      &:hover {
+        transform: rotate(360deg);
+      }
+    }
   }
 }
 

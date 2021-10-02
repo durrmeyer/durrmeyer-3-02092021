@@ -179,23 +179,23 @@ article {
 
 .loader__spinner::after {
   content: "";
+
   position: absolute;
   top: 80px;
   left: 80px;
   margin: -25px 0 0 -25px;
-
   border: $color-tertiaire 10px solid;
   border-left: 15px solid $color-primaire;
   border-top: 25px solid $color-secondaire;
   border-radius: 50%;
   width: 200px;
   height: 200px;
-  animation: loader 5s linear 6 forwards;
+  animation: loader 5s linear 5 forwards;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  -webkit-animation: loader 2s linear 6 forwards;
+  -webkit-animation: loader 5s linear 5 forwards;
 }
 
 @keyframes loader {
@@ -219,6 +219,7 @@ article {
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
+    background-color: transparent;
     opacity: 0;
   }
 }
