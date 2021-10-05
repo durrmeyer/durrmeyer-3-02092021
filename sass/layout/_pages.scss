@@ -4,19 +4,13 @@
   position: relative;
   margin-top: -66px;
   .button {
+    display: flex;
+    justify-content: center;
     text-align: center;
     margin-top: 45px;
     padding-bottom: 45px;
-    &__menu {
-      background: linear-gradient(#ff79da, 25%, #9356dc);
-      border: $btn-border;
-      height: $btn_height;
-      width: $btn_width;
-      border-radius: $btn_radius;
-      font-size: $btn_size;
-      color: white;
-      font-weight: 600;
-    }
+    margin-bottom: 25px;
+    height: 50px;
   }
 }
 .background {
@@ -63,7 +57,7 @@ section {
     background: $white;
     box-shadow: 0 4px 6px #d0ccd0;
     height: 72px;
-    border-radius: 0 15px 15px 0;
+    margin: 10px;
     border-radius: 15px;
     padding-left: 15px;
     padding-right: 15px;
@@ -91,6 +85,9 @@ section {
       -moz-transform: rotate(360deg);
       -ms-transform: rotate(360deg);
       -o-transform: rotate(360deg);
+    }
+    &:hover {
+      padding-right: 80px;
     }
     h3 {
       font-size: 15px;
@@ -121,7 +118,6 @@ section {
       justify-content: flex-end;
       align-items: flex-end;
       padding-left: 0.5rem;
-      margin-right: 74px;
     }
     .check {
       position: absolute;

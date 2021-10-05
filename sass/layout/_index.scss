@@ -28,7 +28,8 @@
     cursor: pointer;
     margin-bottom: 25px;
     height: 50px;
-    box-shadow: 0 9px 17px #555355;
+    width: 222px;
+    box-shadow: 4px 4px 6px #aaa;
     background: linear-gradient(
       to top,
       $color-primaire,
@@ -42,9 +43,9 @@
     font-weight: bold;
   }
   &__button:hover {
-    box-shadow: 0 9px 17px #242025;
-    background: linear-gradient(to top, #9356dc, #b35cdc, #ff79da, -50%);
-    opacity: 0.9;
+    box-shadow: 4px 4px 6px #000;
+    background-blend-mode: lighten;
+    background-color: #ae80e5;
   }
 }
 
