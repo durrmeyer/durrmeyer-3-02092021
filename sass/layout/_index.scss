@@ -171,86 +171,72 @@ article {
   }
 }
 
-.loader {
+#loader {
   height: 100%;
-  background: black;
-  margin: auto;
+  width: 100%;
   position: fixed;
   text-align: center;
+  padding-left: 112px;
+  margin: auto;
+  background-color: black;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 20;
-  -webkit-animation: spinner 15s linear;
-  animation: spinner 15s linear;
+  animation: spinner 15s linear forwards;
   visibility: hidden;
-  &__spinner {
+  -webkit-animation: spinner 15s linear forwards;
+  .loaderText {
+    display: flex;
     position: absolute;
-    margin-left: 257px;
-    height: 200px;
-    width: 200px;
-    &::after {
-      content: "";
-      position: absolute;
-      top: 80px;
-      left: 80px;
-      margin: -25px 0 0 -25px;
-      border: $color-tertiaire 10px solid;
-      border-left: 15px solid $color-primaire;
-      border-top: 25px solid $color-secondaire;
-      border-radius: 50%;
-      width: 200px;
-      height: 200px;
-      animation: loader 5s linear infinite;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
-      -o-border-radius: 50%;
-      -webkit-animation: loader 5s linear infinite;
-    }
+    margin-left: 130px;
+    font-family: $text;
+    font-size: 32px;
+    top: 257px;
+    right: 287px;
+    animation: loadertext 8s ease-in-out infinite;
   }
 }
 
 @keyframes spinner {
   0% {
     visibility: visible;
-    opacity: 0.9;
+    opacity: 0.8;
   }
-  20% {
-    opacity: 0.9;
-    background-color: blueviolet;
+  50%,
+  80% {
+    opacity: 0.7;
   }
-  50% {
-    opacity: 0.9;
-    background-color: cadetblue;
-  }
+
   100% {
     opacity: 0;
     visibility: hidden;
   }
 }
-@keyframes loader {
+@keyframes loadertext {
   0% {
-    transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
+    transform: scale(0.5);
+    color: $color-primaire;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
   }
-  50% {
-    transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
+  20% {
+    transform: scale(0.8);
+    color: $color-secondaire;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
   }
+
   100% {
-    transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    opacity: 0;
+    transform: scale(2);
+    color: $color-tertiaire;
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
   }
 }
