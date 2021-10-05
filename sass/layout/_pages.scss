@@ -1,8 +1,8 @@
 .container {
   background: $color-card;
-  border-radius: 55px 55px 0 0;
+  border-radius: 32px 32px 0 0;
   position: relative;
-  margin-top: -66px;
+  margin-top: -54px;
   .button {
     display: flex;
     justify-content: center;
@@ -15,7 +15,7 @@
 .background {
   width: 100%;
   img {
-    height: 290px;
+    height: 256px;
     object-fit: cover;
   }
 }
