@@ -124,11 +124,11 @@ article {
     width: 100%;
     position: relative;
     @include responsive(desktop) {
-      width: 366px;
+      width: 446px;
       height: 186px;
     }
     @include responsive(tablette) {
-      width: 299px;
+      width: 345px;
       height: 186px;
     }
 
@@ -171,7 +171,7 @@ article {
     }
   }
 }
-
+/*------------------Loader--------------------*/
 #loader {
   height: 100%;
   width: 100%;
@@ -194,7 +194,7 @@ article {
     font-family: $text;
     font-size: 32px;
     top: 257px;
-    right: 287px;
+    right: 239px;
     animation: loadertext 8s ease-in-out infinite;
   }
 }
