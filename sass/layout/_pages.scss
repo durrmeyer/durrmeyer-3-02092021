@@ -43,6 +43,18 @@ section {
   margin-bottom: 12px;
   margin-left: 10px;
   padding-bottom: 12px;
+  .menu:nth-child(1) {
+    animation-duration: 1s;
+  }
+  .menu:nth-child(2) {
+    animation-duration: 3s;
+  }
+  .menu:nth-child(3) {
+    animation-duration: 6s;
+  }
+  .menu:nth-child(4) {
+    animation-duration: 9s;
+  }
   .title-menu {
     font-weight: lighter;
     border-bottom: 3px solid $color-tertiaire;
@@ -65,11 +77,8 @@ section {
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    /*deroulement du menu*/
-    animation-name: deroulementtext;
-    animation-duration: 10s;
-    animation-delay: 1s;
-    animation-timing-function: ease-in-out;
+    /*deroulementdumenu*/
+    animation: animText 10s;
     &:hover .check {
       opacity: 1;
       transform: translateX(-50px);
@@ -147,35 +156,32 @@ section {
         transition: transform 500ms ease-in-out;
       }
     }
+  }
+}
+/*boucle du texte*/
 
-    /*boucle du texte*/
-
-    @keyframes deroulementtext {
-      0% {
-        transform: translateY(10vh);
-        opacity: 0;
-        -webkit-transform: translateY(10vh);
-        -moz-transform: translateY(10vh);
-        -ms-transform: translateY(10vh);
-        -o-transform: translateY(10vh);
-      }
-      50% {
-        transform: translate(0.5);
-        -webkit-transform: translate(0.5);
-        -moz-transform: translate(0.5);
-        -ms-transform: translate(0.5);
-        -o-transform: translate(0.5);
-      }
-      100% {
-        transform: translateY(0);
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-        -o-transform: translateY(0);
-      }
-    }
-
-    /* partie validation */
+@keyframes animText {
+  0% {
+    transform: translateY(10vh);
+    opacity: 0;
+    -webkit-transform: translateY(10vh);
+    -moz-transform: translateY(10vh);
+    -ms-transform: translateY(10vh);
+    -o-transform: translateY(10vh);
+  }
+  50% {
+    transform: translate(0.5);
+    -webkit-transform: translate(0.5);
+    -moz-transform: translate(0.5);
+    -ms-transform: translate(0.5);
+    -o-transform: translate(0.5);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
   }
 }
