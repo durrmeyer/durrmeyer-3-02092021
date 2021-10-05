@@ -110,7 +110,8 @@ header {
   cursor: pointer;
   margin-bottom: 25px;
   height: 50px;
-  box-shadow: 0 9px 17px #555355;
+  width: 222px;
+  box-shadow: 4px 4px 6px #aaa;
   background: linear-gradient(to top, #9356dc, #b35cdc, #ff79da);
   border-radius: 20px;
   border: none;
@@ -119,9 +120,9 @@ header {
   font-weight: bold;
 }
 .info__button:hover {
-  box-shadow: 0 9px 17px #242025;
-  background: linear-gradient(to top, #9356dc, #b35cdc, #ff79da, -50%);
-  opacity: 0.9;
+  box-shadow: 4px 4px 6px #000;
+  background-blend-mode: lighten;
+  background-color: #ae80e5;
 }
 
 section {
@@ -363,19 +364,12 @@ footer ul a .icon {
   margin-top: -66px;
 }
 .container .button {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   margin-top: 45px;
   padding-bottom: 45px;
-}
-.container .button__menu {
-  background: linear-gradient(#ff79da, 25%, #9356dc);
-  border: none;
-  height: 54px;
-  width: 210px;
-  border-radius: 45px;
-  font-size: 15px;
-  color: white;
-  font-weight: 600;
+  margin-bottom: 25px;
+  height: 50px;
 }
 
 .background {
@@ -425,7 +419,7 @@ section .menu {
   background: white;
   box-shadow: 0 4px 6px #d0ccd0;
   height: 72px;
-  border-radius: 0 15px 15px 0;
+  margin: 10px;
   border-radius: 15px;
   padding-left: 15px;
   padding-right: 15px;
@@ -457,6 +451,9 @@ section .menu:hover .check-icon {
   -ms-transform: rotate(360deg);
   -o-transform: rotate(360deg);
 }
+section .menu:hover {
+  padding-right: 80px;
+}
 section .menu h3 {
   font-size: 15px;
   padding-left: 7px;
@@ -485,7 +482,6 @@ section .menu__prix {
   justify-content: flex-end;
   align-items: flex-end;
   padding-left: 0.5rem;
-  margin-right: 74px;
 }
 section .menu .check {
   position: absolute;
