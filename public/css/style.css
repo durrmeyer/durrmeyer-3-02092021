@@ -285,6 +285,11 @@ article .card-body__text {
   right: 246px;
   animation: loadertext 8s ease-in-out infinite;
 }
+@media (max-width: 1400px) {
+  #loader .loaderText {
+    right: 600px;
+  }
+}
 
 @keyframes spinner {
   0% {

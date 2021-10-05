@@ -196,6 +196,9 @@ article {
     top: 257px;
     right: 246px;
     animation: loadertext 8s ease-in-out infinite;
+    @include responsive(desktop) {
+      right: 600px;
+    }
   }
 }
 
