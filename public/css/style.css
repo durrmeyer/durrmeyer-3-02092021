@@ -179,7 +179,7 @@ article .restaurant {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media only screen and (max-width: 1400px) {
+@media (max-width: 1400px) {
   article .restaurant {
     display: flex;
     flex-direction: row;
@@ -188,7 +188,7 @@ article .restaurant {
     justify-content: space-around;
   }
 }
-@media only screen and (max-width: 800px) {
+@media (max-width: 991.98px) {
   article .restaurant {
     display: flex;
     flex-direction: row;
@@ -197,7 +197,7 @@ article .restaurant {
     justify-content: space-around;
   }
 }
-@media only screen and (max-width: 400px) {
+@media (max-width: 600px) {
   article .restaurant {
     display: flex;
   }
@@ -210,15 +210,15 @@ article .card {
   width: 100%;
   position: relative;
 }
-@media only screen and (max-width: 1400px) {
+@media (max-width: 1400px) {
   article .card {
-    width: 366px;
+    width: 446px;
     height: 186px;
   }
 }
-@media only screen and (max-width: 800px) {
+@media (max-width: 991.98px) {
   article .card {
-    width: 299px;
+    width: 345px;
     height: 186px;
   }
 }
@@ -258,6 +258,7 @@ article .card-body__text {
   font-size: 12px;
 }
 
+/*------------------Loader--------------------*/
 #loader {
   height: 100%;
   width: 100%;
@@ -281,7 +282,7 @@ article .card-body__text {
   font-family: shrikhand;
   font-size: 32px;
   top: 257px;
-  right: 287px;
+  right: 246px;
   animation: loadertext 8s ease-in-out infinite;
 }
 
@@ -406,6 +407,18 @@ section {
   margin-left: 10px;
   padding-bottom: 12px;
 }
+section .menu:nth-child(1) {
+  animation-duration: 1s;
+}
+section .menu:nth-child(2) {
+  animation-duration: 3s;
+}
+section .menu:nth-child(3) {
+  animation-duration: 6s;
+}
+section .menu:nth-child(4) {
+  animation-duration: 9s;
+}
 section .title-menu {
   font-weight: lighter;
   border-bottom: 3px solid #99f2d0;
@@ -428,13 +441,8 @@ section .menu {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  /*deroulement du menu*/
-  animation-name: deroulementtext;
-  animation-duration: 10s;
-  animation-delay: 1s;
-  animation-timing-function: ease-in-out;
-  /*boucle du texte*/
-  /* partie validation */
+  /*deroulementdumenu*/
+  animation: animText 10s;
 }
 section .menu:hover .check {
   opacity: 1;
@@ -512,7 +520,9 @@ section .menu .check .check-icon {
   width: 30px;
   transition: transform 500ms ease-in-out;
 }
-@keyframes deroulementtext {
+
+/*boucle du texte*/
+@keyframes animText {
   0% {
     transform: translateY(10vh);
     opacity: 0;
@@ -537,7 +547,6 @@ section .menu .check .check-icon {
     -o-transform: translateY(0);
   }
 }
-
 body {
   font-family: roboto;
   font-weight: lighter;
