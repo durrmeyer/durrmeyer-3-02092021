@@ -105,12 +105,10 @@ article {
     padding-right: 15px;
     @include responsive(desktop) {
       @include flex-row;
-      flex-wrap: wrap;
       justify-content: space-around;
     }
     @include responsive(tablette) {
       @include flex-row;
-      flex-wrap: wrap;
       justify-content: space-around;
     }
     @include responsive(phone) {

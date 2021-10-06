@@ -7,9 +7,20 @@
     display: flex;
     justify-content: center;
     margin-top: 45px;
-    padding-bottom: 45px;
-    margin-bottom: 25px;
+    padding-bottom: 37px;
     height: 50px;
+  }
+  .restaurant-section {
+    @include responsive(desktop) {
+      @include flex-row;
+    }
+    @include responsive(tablette) {
+      @include flex-row;
+    }
+    @include responsive(phone) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 .background {
@@ -43,14 +54,22 @@ section {
   margin-bottom: 12px;
   margin-left: 10px;
   padding-bottom: 12px;
+  @include responsive(desktop) {
+    width: 32%;
+  }
+  @include responsive(tablette) {
+    width: 31%;
+  }
+  @include responsive(phone) {
+    width: 100%;
+  }
   /*boucle du Menu*/
   @for $i from 1 through 4 {
     .menu:nth-child(#{$i}) {
-      animation-delay: $i * 0.1s;
+      animation-delay: $i * 0.5s;
     }
   }
 }
-
 @keyframes animText {
   0% {
     transform: translateY(10px);
@@ -77,12 +96,12 @@ section {
   margin: 10px;
   border-radius: 15px;
   padding-right: 15px;
-  margin: 0 11px 15px 4px;
+  margin: 0 24px 15px 4px;
   text-overflow: ellipsis;
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  /*deroulementdumenu*/
+  /*---------------------------------deroulement du menu-------------------------------------*/
   animation: animText 3s forwards;
   &:hover .check {
     opacity: 1;
@@ -107,7 +126,6 @@ section {
     align-items: baseline;
     justify-content: space-between;
     margin-top: -22px;
-
     p {
       font-size: 12px;
       padding-left: 8px;
@@ -153,15 +171,5 @@ section {
       width: 30px;
       transition: transform 500ms ease-in-out;
     }
-  }
-}
-.restaurant-menu {
-  @include responsive(tablette) {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  @include responsive(phone) {
-    display: flex;
-    flex-direction: column;
   }
 }
