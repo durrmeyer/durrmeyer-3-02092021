@@ -22,7 +22,7 @@
 .restaurant {
   display: flex;
   align-items: baseline;
-  padding-top: 27px;
+  padding-top: 10px;
   &__title {
     width: 80%;
     font-family: $text;
@@ -32,8 +32,8 @@
     }
   }
   &__icone {
-    top: 39px;
-    left: 49px;
+    top: 42px;
+    left: 68px;
     font-size: 30px;
     padding-left: 1rem;
     position: relative;
@@ -43,22 +43,18 @@ section {
   margin-bottom: 12px;
   margin-left: 10px;
   padding-bottom: 12px;
-
+  /*boucle du Menu*/
   @for $i from 1 through 4 {
     .menu:nth-child(#{$i}) {
       animation-delay: $i * 0.1s;
     }
   }
 }
-/*boucle du texte*/
 
 @keyframes animText {
   0% {
-    transform: translateY(10vh);
+    transform: translateY(10px);
     opacity: 0;
-  }
-  50% {
-    transform: translate(0.5);
   }
   100% {
     transform: translateY(0);
@@ -68,7 +64,7 @@ section {
 .title-menu {
   font-weight: lighter;
   border-bottom: 3px solid $color-tertiaire;
-  width: 59px;
+  width: 36px;
   font-size: 15px;
   padding-bottom: 2px;
   margin-left: 5px;
@@ -80,7 +76,6 @@ section {
   height: 72px;
   margin: 10px;
   border-radius: 15px;
-  padding-left: 15px;
   padding-right: 15px;
   margin: 0 11px 15px 4px;
   text-overflow: ellipsis;
@@ -88,7 +83,7 @@ section {
   overflow: hidden;
   cursor: pointer;
   /*deroulementdumenu*/
-  animation: animText 2s backwards;
+  animation: animText 3s forwards;
   &:hover .check {
     opacity: 1;
     transform: translateX(-50px);
@@ -123,19 +118,20 @@ section {
   }
   &__prix {
     font-size: 12px;
-    font-weight: 400;
+    font-weight: 900;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     padding-left: 0.5rem;
   }
+  /*----------------------bouton validation----------------------*/
   .check {
     position: absolute;
     margin-left: 0;
     transition: 0.3s ease-in-out;
     background: $color-tertiaire;
     height: 75px;
-    width: 63px;
+    width: 77px;
     top: 0;
     right: -50px;
     opacity: 0;
@@ -157,5 +153,15 @@ section {
       width: 30px;
       transition: transform 500ms ease-in-out;
     }
+  }
+}
+.restaurant-menu {
+  @include responsive(tablette) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @include responsive(phone) {
+    display: flex;
+    flex-direction: column;
   }
 }
