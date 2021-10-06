@@ -18,7 +18,7 @@
   text-align: center;
   margin-top: -25px;
   &__title {
-    font-size: 29px;
+    font-size: 22px;
     padding: 15px;
   }
   &__text {
@@ -48,7 +48,6 @@
     background-color: #ae80e5;
   }
 }
-
 section {
   margin-left: 15px;
   h2 {
@@ -71,6 +70,9 @@ section {
     background-color: #f5f5f5;
     box-shadow: 0 5px 15px #00000033;
     cursor: pointer;
+    p {
+      font-weight: bold;
+    }
   }
   &__number {
     background-color: $color-primaire;
@@ -115,7 +117,7 @@ article {
       display: flex;
     }
   }
-
+  /* -------------card restaurant---------------*/
   .card {
     background-color: $white;
     margin-bottom: 27px;
@@ -131,7 +133,6 @@ article {
       width: 345px;
       height: 186px;
     }
-
     &__new {
       color: #008766;
       border-radius: 3px;
@@ -184,6 +185,7 @@ article {
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 999;
   animation: spinner 15s linear forwards;
   visibility: hidden;
   -webkit-animation: spinner 15s linear forwards;
@@ -192,13 +194,10 @@ article {
     position: absolute;
     margin-left: 130px;
     font-family: $text;
-    font-size: 32px;
+    font-size: 20px;
     top: 257px;
-    right: 246px;
+    right: 529px;
     animation: loadertext 8s ease-in-out infinite;
-    @include responsive(desktop) {
-      right: 600px;
-    }
   }
 }
 
@@ -211,7 +210,6 @@ article {
   80% {
     opacity: 0.7;
   }
-
   100% {
     opacity: 0;
     visibility: hidden;
@@ -221,26 +219,13 @@ article {
   0% {
     transform: scale(0.5);
     color: $color-primaire;
-    -webkit-transform: scale(0.5);
-    -moz-transform: scale(0.5);
-    -ms-transform: scale(0.5);
-    -o-transform: scale(0.5);
   }
   20% {
     transform: scale(0.8);
     color: $color-secondaire;
-    -webkit-transform: scale(0.8);
-    -moz-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    -o-transform: scale(0.8);
   }
-
   100% {
     transform: scale(2);
     color: $color-tertiaire;
-    -webkit-transform: scale(2);
-    -moz-transform: scale(2);
-    -ms-transform: scale(2);
-    -o-transform: scale(2);
   }
 }
