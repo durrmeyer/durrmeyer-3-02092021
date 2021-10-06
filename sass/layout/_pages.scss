@@ -54,15 +54,7 @@ section {
   margin-bottom: 12px;
   margin-left: 10px;
   padding-bottom: 12px;
-  @include responsive(desktop) {
-    width: 32%;
-  }
-  @include responsive(tablette) {
-    width: 31%;
-  }
-  @include responsive(phone) {
-    width: 100%;
-  }
+
   /*boucle du Menu*/
   @for $i from 1 through 4 {
     .menu:nth-child(#{$i}) {
