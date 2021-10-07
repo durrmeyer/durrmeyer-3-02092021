@@ -427,7 +427,7 @@ section .menu:nth-child(4) {
 
 @keyframes animText {
   0% {
-    transform: translateY(10px);
+    transform: translateY(8px);
     opacity: 0;
   }
   100% {

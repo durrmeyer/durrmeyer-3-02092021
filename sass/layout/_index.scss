@@ -54,6 +54,9 @@ section {
   @include responsive(desktop) {
     width: 100%;
   }
+}
+.fonctionnement-etapes {
+  margin-top: 42px;
   h2 {
     font-size: 21px;
     margin-left: 7px;
@@ -187,18 +190,16 @@ article {
   bottom: 0;
   z-index: 999;
   animation: spinner 15s linear forwards;
-
   .loaderText {
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: $text;
-    margin-top: 224px;
+    margin-top: 420px;
     font-size: 20px;
     animation: loadertext 2s ease infinite;
   }
 }
-
 @keyframes spinner {
   0% {
     visibility: visible;

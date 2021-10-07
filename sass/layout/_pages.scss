@@ -13,9 +13,11 @@
   .restaurant-section {
     @include responsive(desktop) {
       @include flex-row;
+      justify-content: center;
     }
     @include responsive(tablette) {
       @include flex-row;
+      justify-content: center;
     }
     @include responsive(phone) {
       display: flex;
