@@ -2,22 +2,25 @@ header {
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-bottom: 20px;
-}
-.header-retour {
-  padding-bottom: 7px;
-  margin-top: 27px;
-  margin-right: 15px;
-  font-size: 20px;
-  width: 10%;
-  a {
-    color: black;
+  margin-bottom: 0;
+  padding-bottom: 25px;
+
+  .header-retour {
+    padding-bottom: 7px;
+    margin-top: 27px;
+    margin-right: 15px;
+    font-size: 20px;
+    width: 10%;
+    a {
+      color: black;
+    }
   }
-}
-.header-logo {
-  display: flex;
-  width: 181px;
-  height: 35px;
-  padding-top: 18px;
-  padding-right: 20px;
+  .header-logo {
+    display: flex;
+    width: 181px;
+    height: 35px;
+    padding-top: 18px;
+    padding-right: 20px;
+    margin-left: 50px;
+  }
 }

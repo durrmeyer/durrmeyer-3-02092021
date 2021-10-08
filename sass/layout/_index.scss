@@ -4,9 +4,10 @@
   border-top: 1px inset #f2f2f2;
   @include flexbox;
   font-size: 13px;
+  margin-bottom: 12px;
   &__icone {
     padding-right: 17px;
-    font-size: 27px;
+    font-size: 21px;
   }
   p {
     font-size: 19px;
@@ -17,35 +18,36 @@
   background: $color-card;
   text-align: center;
   margin-top: -25px;
+  margin-bottom: 38px;
   &__title {
     font-size: 22px;
-    padding: 15px;
-  }
-  &__text {
-    font-size: 19px;
+    padding: 15px 15px 0 15px;
   }
   &__button {
     cursor: pointer;
-    margin-bottom: 25px;
+    margin-top: 12px;
+    margin-bottom: 47px;
     height: 50px;
     width: 222px;
-    box-shadow: 4px 4px 6px #aaa;
+    border: none;
+    box-shadow: 5px 5px 7px rgb(58, 54, 54);
     background: linear-gradient(
       to top,
       $color-primaire,
       #b35cdc,
       $color-secondaire
     );
-    border-radius: 20px;
+    border-radius: 109px;
     border: none;
     padding: 6px 25px 6px 25px;
     color: #fff;
     font-weight: bold;
-  }
-  &__button:hover {
-    box-shadow: 4px 4px 6px #000;
-    background-blend-mode: lighten;
-    background-color: #ae80e5;
+    overflow: hidden;
+    transition: 1s all ease-in-out;
+    &:hover {
+      opacity: 0.8;
+      box-shadow: 7px 7px 4px rgb(7, 5, 5);
+    }
   }
 }
 section {
@@ -54,12 +56,10 @@ section {
   @include responsive(desktop) {
     width: 100%;
   }
-}
-.fonctionnement-etapes {
   h2 {
     font-size: 21px;
     margin-left: 7px;
-    margin-top: 42px;
+    margin-top: 54px;
   }
   .etapes {
     margin-left: 0;
@@ -71,40 +71,44 @@ section {
       justify-content: flex-start;
       flex-wrap: wrap;
       padding-right: 21px;
-      margin: 24px 20px 54px 0px;
+      margin: 24px 20px 24px 0px;
       border-radius: 20px;
       background-color: #f5f5f5;
       box-shadow: 0 5px 15px #00000033;
       cursor: pointer;
+      &:nth-child(3) {
+        background-color: #9356dc2e;
+      }
       p {
         font-weight: bold;
       }
     }
-  }
-  &__number {
-    background-color: $color-primaire;
-    color: white;
-    border-radius: 50%;
-    padding: 5px 9px;
-    margin-left: -9px;
-  }
-  &__icon {
-    padding-left: 15px;
-    padding-right: 15px;
-    color: #877a7a;
-  }
-  .color {
-    color: $color-primaire;
+    &__number {
+      background-color: $color-primaire;
+      color: white;
+      border-radius: 50%;
+      padding: 5px 9px;
+      margin-left: -9px;
+    }
+    &__icon {
+      padding-left: 15px;
+      padding-right: 15px;
+      color: #877a7a;
+    }
+    .color {
+      color: $color-primaire;
+    }
   }
 }
 
 /*---------------- section restaurant-----------*/
 article {
   background: $color-card;
-  padding-bottom: 15px;
+  padding-top: 1px;
 
   .title-restaurant {
     padding: 15px;
+    margin: 45px 0 0 0;
     align-items: center;
   }
   .restaurant {
@@ -126,7 +130,7 @@ article {
   .card {
     background-color: $white;
     margin-bottom: 27px;
-    padding-bottom: 10px;
+    padding-bottom: 33px;
     border-radius: 20px;
     width: 100%;
     position: relative;
@@ -151,20 +155,22 @@ article {
         background: $color-tertiaire;
         border-radius: 3px;
         padding: 4px 11px 4px 11px;
-        margin-top: 28px;
+        margin-top: 12px;
         margin-right: 17px;
         font-family: $text2;
         font-weight: 600;
         font-size: 12px;
       }
     }
-
     img {
       object-fit: cover;
-      object-position: center;
+      object-position: bottom;
       border-radius: 20px 20px 0 0;
-      height: 131px;
+      height: 162px;
       width: 100%;
+    }
+    .note-img {
+      object-position: center;
     }
   }
   .card-body {
@@ -189,13 +195,13 @@ article {
   right: 0;
   bottom: 0;
   z-index: 999;
-  animation: spinner 15s linear forwards;
+  animation: spinner 8s linear forwards;
   .loaderText {
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: $text;
-    margin-top: 420px;
+    margin-top: 412px;
     font-size: 20px;
     animation: loadertext 2s ease infinite;
   }
@@ -205,8 +211,9 @@ article {
     visibility: visible;
     opacity: 1;
   }
+
   100% {
-    opacity: 0;
+    opacity: 1;
     visibility: hidden;
   }
 }

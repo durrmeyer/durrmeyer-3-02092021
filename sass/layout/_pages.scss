@@ -2,26 +2,30 @@
   background: $color-card;
   border-radius: 32px 32px 0 0;
   position: relative;
+  padding-bottom: 45px;
   margin-top: -54px;
   .button {
     display: flex;
     justify-content: center;
-    margin-top: 45px;
-    padding-bottom: 37px;
+    padding-top: 71px;
+    padding-bottom: 84px;
     height: 50px;
   }
   .restaurant-section {
     @include responsive(desktop) {
-      @include flex-row;
+      display: flex;
       justify-content: center;
     }
     @include responsive(tablette) {
-      @include flex-row;
-      justify-content: center;
+      display: flex;
+      flex-direction: column;
     }
     @include responsive(phone) {
       display: flex;
       flex-direction: column;
+    }
+    section {
+      margin-bottom: -36px;
     }
   }
 }
@@ -29,6 +33,7 @@
   width: 100%;
   img {
     height: 256px;
+    -o-object-fit: cover;
     object-fit: cover;
   }
 }
@@ -39,34 +44,37 @@
   &__title {
     width: 80%;
     font-family: $text;
+    margin-top: 10px;
     h1 {
-      font-size: 26px;
-      margin-left: 16px;
+      font-size: 24px;
+      text-align: center;
     }
   }
   &__icone {
-    top: 42px;
-    left: 68px;
-    font-size: 30px;
+    top: 31px;
+    left: 49px;
+    font-size: 24px;
     padding-left: 1rem;
     position: relative;
   }
 }
+/*-------------déroulement du menu avec une boucle-------------------*/
 section {
   margin-bottom: 12px;
   margin-left: 10px;
   padding-bottom: 12px;
 
   /*boucle du Menu*/
-  @for $i from 1 through 4 {
+  @for $i from 1 through 5 {
     .menu:nth-child(#{$i}) {
+      -webkit-animation-delay: $i * 0.5s;
       animation-delay: $i * 0.5s;
     }
   }
 }
-@keyframes animText {
+@-webkit-keyframes animText {
   0% {
-    transform: translateY(10px);
+    transform: translateY(20px);
     opacity: 0;
   }
   100% {
@@ -74,6 +82,17 @@ section {
     opacity: 1;
   }
 }
+@keyframes animText {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/*----------------------------------------------------------------*/
 .title-menu {
   font-weight: lighter;
   border-bottom: 3px solid $color-tertiaire;
@@ -95,7 +114,7 @@ section {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  /*---------------------------------deroulement du menu-------------------------------------*/
+  -webkit-animation: animText 3s forwards;
   animation: animText 3s forwards;
   &:hover .check {
     opacity: 1;
@@ -134,7 +153,7 @@ section {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    padding-left: 0.5rem;
+    padding-left: 3.5rem;
   }
   /*----------------------bouton validation----------------------*/
   .check {
