@@ -1,22 +1,11 @@
 {
-  "name": "durrmeyer-3-02092021",
+  "name": "durrmeyer-3-02092021sauvegarde",
   "version": "1.0.0",
-  "description": "Ohmyfood projet3",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css" 
-     },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/durrmeyer/durrmeyer-3-02092021.git"
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
   },
   "author": "",
-  "license": "ISC",
-
-  "bugs": {
-    "url": "https://github.com/durrmeyer/durrmeyer-3-02092021/issues"
-    
-  },
-  "homepage": "https://github.com/durrmeyer/durrmeyer-3-02092021#readme"
+  "license": "ISC"
 }
-
