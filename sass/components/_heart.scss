@@ -8,7 +8,7 @@
   position: absolute;
   &::before {
     content: "\f004";
-    transition: color 3s ease-out;
+    transition: color 2s ease-out;
   }
   &:hover::before {
     color: $color-primaire;
