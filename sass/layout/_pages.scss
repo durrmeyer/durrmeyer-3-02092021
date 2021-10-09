@@ -33,7 +33,6 @@
   width: 100%;
   img {
     height: 256px;
-    -o-object-fit: cover;
     object-fit: cover;
   }
 }
@@ -67,19 +66,8 @@ section {
   /*boucle du Menu*/
   @for $i from 1 through 5 {
     .menu:nth-child(#{$i}) {
-      -webkit-animation-delay: $i * 0.5s;
       animation-delay: $i * 0.5s;
     }
-  }
-}
-@-webkit-keyframes animText {
-  0% {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
   }
 }
 @keyframes animText {

@@ -195,7 +195,7 @@ article {
   right: 0;
   bottom: 0;
   z-index: 999;
-  animation: spinner 8s linear forwards;
+  animation: spinner 3s linear forwards;
   .loaderText {
     display: flex;
     justify-content: center;
@@ -203,7 +203,7 @@ article {
     font-family: $text;
     margin-top: 250px;
     font-size: 20px;
-    animation: loadertext 2s ease infinite;
+    animation: loadertext 1s ease infinite;
   }
 }
 @keyframes spinner {
