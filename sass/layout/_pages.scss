@@ -103,8 +103,7 @@ section {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  -webkit-animation: animText 3s forwards;
-  animation: animText 3s forwards;
+  animation: animText 1s forwards;
   &:hover .check {
     opacity: 1;
     transform: translateX(-50px);
