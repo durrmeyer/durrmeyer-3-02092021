@@ -9,7 +9,8 @@
     justify-content: center;
     padding-top: 71px;
     padding-bottom: 84px;
-    height: 50px;
+    height: $btn_height;
+    border: $btn_border;
   }
   .restaurant-section {
     @include responsive(desktop) {
