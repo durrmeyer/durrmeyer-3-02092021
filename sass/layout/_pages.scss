@@ -12,6 +12,9 @@
     height: 16px;
     border: $btn_border;
   }
+  main {
+    overflow-x: hidden;
+  }
   .restaurant-section {
     @include responsive(desktop) {
       display: flex;
@@ -32,6 +35,7 @@
     }
   }
 }
+
 .background {
   width: 100%;
   img {
