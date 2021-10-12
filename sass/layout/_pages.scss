@@ -9,13 +9,14 @@
     justify-content: center;
     padding-top: 71px;
     padding-bottom: 84px;
-    height: $btn_height;
+    height: 16px;
     border: $btn_border;
   }
   .restaurant-section {
     @include responsive(desktop) {
       display: flex;
       justify-content: center;
+      margin-left: 10px;
     }
     @include responsive(tablette) {
       display: flex;
@@ -68,19 +69,11 @@ section {
   @for $i from 1 through 5 {
     .menu:nth-child(#{$i}) {
       animation-delay: $i * 0.5s;
+      visibility: hidden;
     }
   }
 }
-@keyframes animText {
-  0% {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
+
 /*----------------------------------------------------------------*/
 .title-menu {
   font-weight: lighter;
@@ -91,7 +84,6 @@ section {
   margin-left: 5px;
 }
 .menu {
-  flex: 0%;
   background: $white;
   box-shadow: 0 4px 6px #d0ccd0;
   height: 72px;
@@ -104,6 +96,7 @@ section {
   overflow: hidden;
   cursor: pointer;
   animation: animText 1s forwards;
+
   &:hover .check {
     opacity: 1;
     transform: translateX(-50px);
@@ -142,6 +135,16 @@ section {
     justify-content: flex-end;
     align-items: flex-end;
     padding-left: 3.5rem;
+  }
+  @keyframes animText {
+    0% {
+      transform: translateY(20px);
+      visibility: hidden;
+    }
+    100% {
+      transform: translateY(0);
+      visibility: visible;
+    }
   }
   /*----------------------bouton validation----------------------*/
   .check {

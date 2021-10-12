@@ -9,7 +9,8 @@ footer {
   h3 {
     font-family: $text, cursive;
     font-weight: inherit;
-    font-size: 13px;
+    font-size: 20px;
+    margin-bottom: 0;
   }
   ul {
     font-weight: 400;
@@ -19,8 +20,7 @@ footer {
       color: $white;
       line-height: 19px;
       text-decoration: none;
-      font-size: 11px;
-
+      font-size: 14px;
       font-family: $text2;
       i {
         padding-right: 5px;
