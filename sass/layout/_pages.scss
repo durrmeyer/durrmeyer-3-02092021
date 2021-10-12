@@ -16,7 +16,7 @@
     @include responsive(desktop) {
       display: flex;
       justify-content: center;
-      margin-left: 10px;
+      margin-right: 10px;
     }
     @include responsive(tablette) {
       display: flex;
@@ -25,6 +25,7 @@
     @include responsive(phone) {
       display: flex;
       flex-direction: column;
+      padding-right: 10px;
     }
     section {
       margin-bottom: -36px;
@@ -89,8 +90,8 @@ section {
   height: 72px;
   margin: 10px;
   border-radius: 15px;
-  padding-right: 15px;
-  margin: 0 24px 15px 4px;
+  padding-right: 41px;
+  margin: 0 0 15px 0;
   text-overflow: ellipsis;
   position: relative;
   overflow: hidden;
