@@ -7,8 +7,8 @@
   .button {
     display: flex;
     justify-content: center;
-    padding-top: 71px;
-    padding-bottom: 84px;
+    padding-top: 22px;
+    padding-bottom: 98px;
     height: 16px;
     border: $btn_border;
   }
@@ -44,20 +44,24 @@
   display: flex;
   align-items: baseline;
   padding-top: 10px;
+  justify-content: flex-start;
   &__title {
-    width: 80%;
     font-family: $text;
     margin-top: 10px;
+    width: 85%;
+    display: flex;
     h1 {
-      font-size: 24px;
+      font-size: 22px;
       text-align: center;
+      margin-left: 20px;
+      padding-right: 52px;
     }
   }
   &__icone {
     top: 31px;
     left: 49px;
     font-size: 24px;
-    padding-left: 1rem;
+
     position: relative;
   }
 }
@@ -80,6 +84,7 @@ section {
     font-size: 15px;
     padding-bottom: 2px;
     margin-left: 5px;
+    margin-top: 27px;
   }
   .menu {
     background: $white;
